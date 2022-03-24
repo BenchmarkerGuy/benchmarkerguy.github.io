@@ -6,10 +6,10 @@ function benchmark(){
     startTime = new Date();
     benchmarkElement = document.getElementById("benchmark");
     for (let i = 0; i < 100; i++) {
-        RunTasks("https://www.google.com");        
+        RunTasks("https://catfact.ninja/breeds?limit=1");        
     }
     endTime = new Date();
-    benchmarkElement.innerHTML = "Time taken: " + (endTime - startTime) + "ms";
+    benchmarkElement.innerHTML = "Time taken: " + (endTime - startTime) + "ms (lower = better)";
 }
 function RunTasks(theUrl)
 {
